@@ -1,0 +1,90 @@
+<!--  appointment -->
+  <div id="appointment" class="appointment-main-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 hidden-sm">
+          <div class="appointment-img">
+            <img src="images/appointment.jpg" class="img-responsive" alt="Appointment">
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="appointment-block">
+            <form id="appointment-form" class="appointment-form" method="post" action="appointment.php">                            
+              <h5 class="form-heading-title"><span class="form-heading-no">1.</span>Vehicle Information</h5>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="dropdown">
+                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="service-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="drp-name" data-bind="label">Choose Service Type</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu service-type" aria-labelledby="service-type" name="service-type">
+                      <li value="Basic Washings"><a href="#">Basic Washing</a></li>
+                      <li value="Deluxe Washing"><a href="#">Deluxe Washing</a></li>
+                      <li value="Ultimate Washing"><a href="#">Ultimate Washing</a></li>
+                      <li value="Super Washing"><a href="#">Super Washing</a></li>
+                    </ul>
+                    <input type='hidden' name='service-type' id="service-type">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="dropdown">
+                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="vehical-make" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="drp-name" data-bind="label">Choose Vehicle Make</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu vehical-make" aria-labelledby="vehical-make" name="vehical-make">
+                      <li value="Honda"><a href="#">Honda</a></li>
+                      <li value="Hundai"><a href="#">Hundai</a></li>
+                      <li value="BMW"><a href="#">BMW</a></li>
+                    </ul>
+                    <input type='hidden' name='vehical-make' id="vehical-make">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" name="vehical-model" id="vehical-model" placeholder="Enter Vehicle Model" required>
+                </div>
+              </div>
+              <h5 class="form-heading-title"><span class="form-heading-no">2.</span>Appointment Information</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" name="appointment-date" class="form-control date-pick" id="appointment-date" placeholder="Appointment Date">
+                </div>
+                <div class="col-sm-6">
+                  <div class="dropdown">
+                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="appointment-time" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="drp-name" data-bind="label">Appointments Time-frame</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu appointment-time" aria-labelledby="appointment-time" name="appointment-time">
+                      <li value="Morning"><a href="#">Morning</a></li>
+                      <li value="Afternoon"><a href="#">Afternoon</a></li>
+                      <li value="Evening"><a href="#">Evening</a></li>
+                    </ul>
+                    <input type='hidden' name='appointment-time' id='appointment-time'>
+                  </div>
+                </div>
+              </div>
+              <h5 class="form-heading-title"><span class="form-heading-no">3.</span>Contact Details</h5>
+              <div class="row">
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="col-sm-12">
+                  <textarea id="message" name="message" rows="6" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default pull-right">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  end appointment -->

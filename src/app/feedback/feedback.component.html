@@ -1,0 +1,59 @@
+<!--  feedback -->
+  <div id="appointments" class="appointment-main-block appointment-two-main-block">
+    <div class="container">
+      <div class="row">
+        <div class="section text-center">
+          <h3 class="section-heading text-center">Feedback</h3>
+          <p class="sub-heading text-center">Etiam imperdiet imperdiet orci nunc nec neque phasellus leo dolor tempus non auctor.</p>
+        </div>        
+        <div class="col-md-12">
+          <div class="appointment-block">
+            <form id="appointment-form" class="appointment-form" method="post" action="#">                            
+              <h5 class="form-heading-title"><span class="form-heading-no">1.</span>Vehicle Details</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vehical-no" placeholder="Enter Vehicle Number" required>
+                </div>
+                <div class="col-sm-6">
+                  <div class="dropdown">
+                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="vehical-make" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="drp-name" data-bind="label">Choose Vehicle Make</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="vehical-make">
+                      <li><a href="#">Honda</a></li>
+                      <li><a href="#">Hundai</a></li>
+                      <li><a href="#">BMW</a></li>
+                    </ul>
+                  </div>
+                </div>                
+              </div>
+              <h5 class="form-heading-title"><span class="form-heading-no">2.</span>Appointment Details</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control date-pick" id="appointment-date" placeholder="Appointment Date">
+                </div>                
+              </div>
+              <h5 class="form-heading-title"><span class="form-heading-no">3.</span>Contact Details</h5>
+              <div class="row">
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="col-sm-12">
+                  <textarea id="message" name="message" rows="6" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default pull-right">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  end feedback -->

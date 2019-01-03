@@ -5,10 +5,89 @@
   <title>Ablelewash</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auto Plus" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="keywords" content="car wash, html template, car wash template, auto plus, car repair, auto wash, auto detail, auto detailing, car, cleaning, mechanic, repair, wash, car service, workshop">
+<meta name="author" content="Ben Ouattara" />
+<meta name="MobileOptimized" content="320" />
+<link rel="icon" type="image/icon" href="./assets/images/favicon/favicon.ico"> <!-- favicon-icon -->
+<!-- theme style -->
+<link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> <!-- bootstrap css -->
+<link href="./assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/> <!-- fontawesome css -->
+<link href="./assets/css/icon-font.css" rel="stylesheet" type="text/css"/> <!-- icon-font css -->
+<link href="./assets/https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Poppins:400,500,700" rel="stylesheet"> <!-- google font -->
+<link href="./assets/css/menumaker.css" rel="stylesheet" type="text/css"/> <!-- menu css -->
+<link href="./assets/css/owl.carousel.css" rel="stylesheet" type="text/css"/> <!-- owl carousel css -->
+<link href="./assets/css/magnific-popup.css" rel="stylesheet" type="text/css"/> <!-- magnify popup css -->
+<link href="./assets/css/datepicker.css" rel="stylesheet" type="text/css"/> <!-- datepicker css -->
+<link href="./assets/css/style.css" rel="stylesheet" type="text/css"/> <!-- custom css -->
+<!-- end theme style -->
+
 </head>
+
+
 <body>
+	<!-- preloader --> 
+  <div class="preloader">
+    <div class="status">
+      <div class="status-message">
+      </div>
+    </div>
+  </div>
+<!-- end preloader --> 
+
+
   <app-root></app-root>
+
+
+
+<!-- jquery -->
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script> <!-- jquery library js -->
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script> <!-- bootstrap js -->
+<script type="text/javascript" src="./assets/js/owl.carousel.js"></script> <!-- owl carousel js -->
+<script type="text/javascript" src="./assets/js/jquery.ajaxchimp.js"></script> <!-- mail chimp js -->
+<script type="text/javascript" src="./assets/js/smooth-scroll.js"></script> <!-- smooth scroll js -->
+<script type="text/javascript" src="./assets/js/jquery.magnific-popup.min.js"></script> <!-- magnify popup js --> 
+<script type="text/javascript" src="./assets/js/waypoints.min.js"></script> <!-- facts count js required for jquery.counterup.js file -->
+<script type="text/javascript" src="./assets/js/jquery.counterup.js"></script> <!-- facts count js-->
+<script type="text/javascript" src="./assets/js/menumaker.js"></script> <!-- menu js--> 
+<script type="text/javascript" src="./assets/js/jquery.appear.js"></script> <!-- progress bar js -->
+<script type="text/javascript" src="./assets/js/jquery.countdown.js"></script>  <!-- event countdown js -->
+<script type="text/javascript" src="./assets/js/price-slider.js"></script> <!-- price slider / filter js-->
+<script type="text/javascript" src="./assets/js/bootstrap-datepicker.js"></script> <!-- bootstrap datepicker js--> 
+<script type="text/javascript" src="./assets/js/jquery.elevatezoom.js"></script> <!-- image zoom js-->
+<script type="text/javascript" src="./assets/js/theme.js"></script> <!-- custom js -->  
+<script>
+  jQuery(function($) {
+    // Asynchronously Load the map API 
+    var script = document.createElement('script');
+    script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+    document.body.appendChild(script);
+  });
+  function initialize(){
+    var myLatLng = {lat: 25.3500, lng: 74.6333}; // Insert Your Latitude and Longitude For Footer Wiget Map
+    var mapOptions = {
+      center: myLatLng, 
+      zoom: 15,
+      disableDefaultUI: true,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]     
+    }
+    // For Footer Widget Map
+    var map = new google.maps.Map(document.getElementById("location"), mapOptions);
+    var image = './assets/images/icons/map.png';
+    var beachMarker = new google.maps.Marker({
+      position: myLatLng, 
+      map: map,   
+      icon: image
+    });    
+  }
+</script>
+<!-- end jquery -->
+
 </body>
+
+
 </html>
